@@ -7,8 +7,7 @@ async function handleScheduled(event) {
   const last_seen_id = await DATA.get('last_seen_id');
 
   const appAuthHeader = new Headers({ 'Authorization': `Bearer ${BEARER_TOKEN}` })
-  const userAuthHeader = new Headers({ 'Authorization': `OAuth oauth_consumer_key=${}` })
-  // TODO userAuthHeader
+  //const userAuthHeader = new Headers({ 'Authorization': `OAuth oauth_consumer_key=${}` })
 
   // Construct RecentSearch API request
   const searchUrl = new URL(recentSearchEndpoint);
@@ -54,7 +53,7 @@ async function handleScheduled(event) {
   }
   console.log(linkMap);
 
-  // Reply to each transcribe request
+  // Reply to each transcribe request. 
 
   return new Response('Hello worker!', {
     headers: { 'content-type': 'text/plain' },
