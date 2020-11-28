@@ -1,0 +1,9 @@
+name = "hg-twitter"
+type = "javascript"
+account_id = "e87112388610b250594da8a0e088d0bb"
+workers_dev = true
+route = ""
+zone_id = ""
+kv_namespaces = [ 
+  { binding = "DATA", id = "a2f620c9bad04c9ab2b379abaa41db30", preview_id = "a2f620c9bad04c9ab2b379abaa41db30" }
+]
