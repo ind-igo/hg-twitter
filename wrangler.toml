@@ -1,5 +1,5 @@
 name = "hg-twitter"
-type = "javascript"
+type = "webpack"
 account_id = "e87112388610b250594da8a0e088d0bb"
 workers_dev = true
 route = ""
